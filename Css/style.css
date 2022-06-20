@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    /*background-color:#3d5880;*/
+    background: #efe7dd url("https://wallpaperaccess.com/full/2224368.png") repeat;
+
+}
+#timelapse{
+    min-width: 100%;
+    min-height: 100%;
+}
+.duss{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.about{
+    text-align: center;
+    margin-top:40px;
+}
+
+.presentazione{
+    margin-left: 200px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #ffffff82;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size:20px;
+    color: rgb(255, 255, 255);
+}
+.wallpaper{
+    height: 100vh;
+}
+.wallpaper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.videoContainer{
+  position: relative; 
+}
+.video{
+  filter: brightness(0.5);
+}
+.profilo img{
+  width: 250px;
+  height:auto;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 100px);
+}
+
+
+/*.img-container{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+}*/
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #e5e5e5;
+    top: -3px;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* Cerchi della timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #e5e5e5;
+    border: 4px solid #57615f;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Piazza il container a sinistra */
+  .left {
+    left: 0;
+  }
+  
+  /* Piazza il container a destra */
+  .right {
+    left: 50%;
+  }
+  
+  /* Aggiunge le frecce a sinistra (puntano a destra) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #e5e5e5;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #005c4b;
+  }
+  
+  /* Aggiunge le frecce a destra (puntano a sinistra) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #e5e5e5;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #005c4b transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* Contenuto box */
+  .content {
+    padding: 10px 20px 10px 20px;
+    background-color: #005c4b;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  
+
+  p{
+    text-justify: justify;
+  }
+
+  .timeline a{
+    color: rgb(2, 132, 226);
+  }
+
+  hr{
+    border: 2px solid #e5e5e5;
+  }
+
+ h2{
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .footer{
+    background-color: #ffffff82;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* select divs */
+ }
+  .social-icons li {
+    margin-right: 30px;
+  }
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+ 
